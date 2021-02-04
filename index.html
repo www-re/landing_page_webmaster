@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.min.css" />
@@ -15,20 +15,22 @@
     <header class="header">
       <div class="wrapper">
         <div class="navigation">
-          <img
-            src="./images/logo-header.svg"
-            alt="company logo"
-            class="company__logo__header"
-          />
+          <a href="./index.html">
+            <img
+              src="./images/logo-header.svg"
+              alt="company logo"
+              class="company__logo__header"
+          /></a>
+
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a href="#" class="navigation__link">О нас</a>
+              <a href="#about" class="navigation__link">О нас</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Требования</a>
+              <a href="#webmaster" class="navigation__link">Требования</a>
             </li>
             <li class="navigation__item">
-              <a href="#" class="navigation__link">Подать заявку</a>
+              <a href="#form" class="navigation__link">Подать заявку</a>
             </li>
           </ul>
         </div>
@@ -45,7 +47,7 @@
               Компания с перспективами развития предлагает удаленную работу для
               веб-мастеров, можно без опыта работы или с небольшим опытом.
             </p>
-            <a href="#" class="hero__link">Узнать больше</a>
+            <a href="#about" class="hero__link">Узнать больше</a>
           </div>
           <div class="hero__image"></div>
         </div>
@@ -53,7 +55,7 @@
     </section>
     <section class="about">
       <div class="wrapper">
-        <div class="about--flex">
+        <div class="about--flex" id="about">
           <div class="about__image"></div>
           <div class="about__text">
             <h2 class="about__title">
@@ -85,7 +87,7 @@
         </div>
       </div>
     </section>
-    <section class="webmaster">
+    <section class="webmaster" id="webmaster">
       <div class="wrapper">
         <h2 class="webmaster__title">
           Требования к кандидату на позицию
@@ -160,128 +162,161 @@
         </ul>
       </div>
     </section>
-    <section class="form">
+    <section class="form" id="form">
       <div class="wrapper">
-        <div class="form__image"></div>
+        <div class="form--flex">
+          <div class="form__image"></div>
+          <form action="">
+            <h3 class="form__title">Откликнуться на вакансию</h3>
+            <p class="form__descr">Заполните форму для подачи заявки</p>
+            <input
+              type="text"
+              name=""
+              class="form__input"
+              placeholder="Ф. И. О."
+              required
+            />
+            <input
+              type="text"
+              name=""
+              class="form__input"
+              placeholder="Telegram/viber"
+              required
+            />
+            <input
+              type="email"
+              name=""
+              class="form__input"
+              placeholder="E-mail"
+              required
+            />
+            <button type="submit" class="form__button">Отправить</button>
+          </form>
+        </div>
       </div>
-      <form action="">
-        <h3 class="form__title">Откликнуться на вакансию</h3>
-        <p class="form__descr">Заполните форму для подачи заявки</p>
-        <input
-          type="text"
-          name=""
-          class="form__input"
-          placeholder="Ф. И. О."
-          required
-        />
-        <input
-          type="text"
-          name=""
-          class="form__input"
-          placeholder="Telegram/viber"
-          required
-        />
-        <input
-          type="email"
-          name=""
-          class="form__input"
-          placeholder="E-mail"
-          required
-        />
-        <button type="submit" class="form__button">Отправить</button>
-      </form>
     </section>
     <footer class="footer">
       <div class="wrapper">
         <ul class="footer__list">
           <li class="footer__item">
-            <img
-              src="./images/logo-footer.svg"
-              alt="company logo"
-              class="company__logo__footer"
-            />
+            <a href="./index.html" class="footer__logo">
+              <img
+                src="./images/logo-footer.svg"
+                alt="company logo"
+                class="company__logo__footer"
+            /></a>
           </li>
           <li class="footer__item">
-            <ul class="numbers__list">
-              <li class="numbers__item">
-                <img
-                  src="./images/viber.svg"
-                  alt="viber image"
-                  class="numbers__img"
-                /><span class="numbers__name">Валерия</span
-                ><a href="tel:+380666146404" class="numbers__link"
-                  >+380666146404</a
-                >/li>
-              </li>
-              <li class="numbers__item">
-                <img
-                  src="./images/viber.svg"
-                  alt="viber image"
-                  class="numbers__img"
-                /><span class="numbers__name">Анна</span
-                ><a href="tel:+380960933838" class="numbers__link"
-                  >+380960933838</a
-                >
-              </li>
-              <li class="numbers__item">
-                <img
-                  src="./images/viber.svg"
-                  alt="viber image"
-                  class="numbers__img"
-                /><span class="numbers__name">Валерия</span
-                ><a href="tel:+380994160329" class="numbers__link"
-                  >+380994160329</a
-                >
-              </li>
-            </ul>
+            <div class="numbers--flex">
+              <ul class="numbers__list">
+                <li class="numbers__item">
+                  <img
+                    src="./images/viber.svg"
+                    alt="viber image"
+                    class="numbers__img"
+                  /><span class="numbers__name">Валерия</span>
+                </li>
+                <li class="numbers__item">
+                  <img
+                    src="./images/viber.svg"
+                    alt="viber image"
+                    class="numbers__img"
+                  /><span class="numbers__name second">Анна</span>
+                </li>
+                <li class="numbers__item">
+                  <img
+                    src="./images/viber.svg"
+                    alt="viber image"
+                    class="numbers__img"
+                  /><span class="numbers__name">Валерия</span>
+                </li>
+              </ul>
+              <ul class="numbers__phone-list">
+                <li class="numbers__phone-item">
+                  <a href="tel:+380666146404" class="numbers__phone-phone"
+                    >+380666146404</a
+                  >
+                </li>
+                <li class="numbers__phone-item">
+                  <a href="tel:+380960933838" class="numbers__phone-phone"
+                    >+380960933838</a
+                  >
+                </li>
+                <li class="numbers__phone-item">
+                  <a href="tel:+380994160329" class="numbers__phone-phone"
+                    >+380994160329</a
+                  >
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="footer__item">
             <div class="address">
               <a class="address__link" href="mailto: hr@remotemployees.com"
                 >hr@remotemployees.com</a
               >
-              <address class="address__address"></address>
+              <address class="address__address">
+                ул. Рымарская 22, Харьков, Украина
+              </address>
               <ul class="address__soclink__list">
                 <li class="address__soclink__item">
-                  <img
-                    src="./images/insta.svg"
-                    alt="instagram image"
-                    class="soclinks__image"
-                  />
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/insta.svg"
+                      alt="instagram image"
+                      class="soclinks__image"
+                    />
+                  </a>
                 </li>
                 <li class="address__soclink__item">
-                  <img
-                    src="./images/fb.svg"
-                    alt="facebook image"
-                    class="soclinks__image"
-                  />
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/fb.svg"
+                      alt="facebook image"
+                      class="soclinks__image"
+                    />
+                  </a>
                 </li>
                 <li class="address__soclink__item">
-                  <img
-                    src="./images/tg.svg"
-                    alt="telegram image"
-                    class="soclinks__image"
-                  />
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/tg.svg"
+                      alt="telegram image"
+                      class="soclinks__image"
+                    />
+                  </a>
                 </li>
                 <li class="address__soclink__item">
-                  <img
-                    src="./images/viber.svg"
-                    alt="viber image"
-                    class="soclinks__image"
-                  />
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/viber.svg"
+                      alt="viber image"
+                      class="soclinks__image"
+                    />
+                  </a>
                 </li>
                 <li class="address__soclink__item">
-                  <img
-                    src="./images/whatsapp.svg"
-                    alt="whatsapp image"
-                    class="soclinks__image"
-                  />
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/whatsapp.svg"
+                      alt="whatsapp image"
+                      class="soclinks__image"
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
           </li>
         </ul>
       </div>
+      <p class="copyright">
+        RemotEmployees 2018-2020 &copy; All rights reserved
+      </p>
     </footer>
+    <img
+      src="./images/fly-envelope.svg"
+      alt="decoration"
+      class="absolute--arrow"
+    />
   </body>
 </html>

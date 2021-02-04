@@ -54,10 +54,24 @@
 
   background: #0062d1;
   border-radius: 30px;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 18px;
   line-height: 22px;
   font-feature-settings: "pnum" on, "onum" on;
 
   color: #ffffff;
+}
+
+.hero__link:hover {
+  background: #ffffff;
+  /* Colour2 */
+
+  border: 2px solid #0062d1;
+  color: #7cb1ff;
+}
+
+.hero__link:active {
+  background: #7cb1ff;
+  border: none;
+  color: #fff;
 }

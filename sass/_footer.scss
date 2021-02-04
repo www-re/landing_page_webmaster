@@ -1,0 +1,140 @@
+.footer {
+  padding: 75px 0;
+  background: #0062d1;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 130px;
+}
+
+.footer__item:last-child {
+  min-width: 344px;
+}
+
+.numbers--flex {
+  display: flex;
+}
+
+.numbers__list {
+  width: 140px;
+}
+
+.numbers__item {
+  display: flex;
+  align-items: center;
+}
+
+.numbers__item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.number__img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.numbers__name {
+  padding-left: 15px;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 175%;
+  // letter-spacing: 0.05em;
+  /* identical to box height, or 37px */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.numbers__phone-phone,
+.numbers__phone-phone:visited {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  /* identical to box height, or 31px */
+
+  /* white */
+
+  color: #ffffff;
+}
+
+.numbers__phone-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.address {
+  height: 162px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.address__link {
+  display: block;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  /* identical to box height, or 31px */
+
+  /* white */
+
+  color: #ffffff;
+
+  margin-bottom: 25px;
+}
+
+.address__address {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  /* identical to box height, or 31px */
+
+  /* white */
+
+  color: #ffffff;
+
+  margin-bottom: 31px;
+}
+
+.address__soclink__list {
+  display: flex;
+  align-items: center;
+}
+
+.address__soclink__item {
+  width: 35px;
+  height: 35px;
+}
+
+.address__soclink__item:not(:last-child) {
+  margin-right: 36px;
+}
+
+.soclinks__image {
+  display: block;
+  width: 35px;
+  height: 35px;
+}
+
+.copyright {
+  padding-top: 70px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  /* identical to box height, or 31px */
+
+  /* white */
+
+  color: #ffffff;
+}

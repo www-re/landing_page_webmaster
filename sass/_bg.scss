@@ -1,3 +1,9 @@
 body {
-  background-color: #ccc;
+  background-color: #fff;
+  background-image: url("../images/Vector-2.svg"), url("../images/Vector.png"),
+    url("../images/Line.svg");
+  background-size: 92px, 892px, 4px 640px, 157px;
+  background-position: right 799px top 466px, right 0 top 0,
+    right 533px top 910px;
+  background-repeat: no-repeat;
 }

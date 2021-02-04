@@ -30,10 +30,15 @@
   font-size: 18px;
   line-height: 22px;
   /* identical to box height */
+  padding: 5px 0;
 
   font-feature-settings: "pnum" on, "onum" on, "case" on;
 
   /* Colour 1 */
 
   color: #3b464c;
+}
+
+.navigation__link:hover {
+  border-bottom: 1px solid #3b464ca4;
 }
