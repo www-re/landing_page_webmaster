@@ -1,0 +1,39 @@
+.header {
+  padding: 49px 0 63px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.company__logo__header {
+  width: 271px;
+  height: auto;
+}
+
+.navigation__list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  // TODO: check
+  padding-bottom: 10px;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.navigation__link,
+.navigation__link:visited {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  font-feature-settings: "pnum" on, "onum" on, "case" on;
+
+  /* Colour 1 */
+
+  color: #3b464c;
+}

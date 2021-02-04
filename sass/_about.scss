@@ -1,0 +1,69 @@
+.about {
+  padding-top: 158px;
+  padding-bottom: 150px;
+}
+
+// TODO: finish
+.about__image {
+  width: 570px;
+  height: 550px;
+  background-image: url("../images/Master-Group-3.png"),
+    url("../images/Master-Group-2.png"), url("../images/Master-Group-1.png");
+  background-repeat: no-repeat;
+  background-position: bottom 0 left 150px, bottom 0 right 0, bottom 0 left 0;
+  background-size: 184px, 271px, 251px;
+
+  margin-top: auto;
+  margin-bottom: 67px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  width: 570px;
+  margin-left: 62px;
+}
+
+.about--flex {
+  display: flex;
+}
+
+.about__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  /* or 45px */
+
+  font-feature-settings: "pnum" on, "onum" on;
+
+  /* Colour 1 */
+
+  color: #3b464c;
+}
+
+.about__list {
+  padding-top: 47px;
+}
+
+.about__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f2f7ff;
+  border-radius: 30px;
+  padding: 39px 32px 39px 38px;
+}
+
+.about__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.about__item-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  /* or 28px */
+
+  color: #000000;
+}

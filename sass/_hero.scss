@@ -1,0 +1,63 @@
+.hero--flex {
+  display: flex;
+}
+
+.hero__image {
+  width: 561.32px;
+  height: 482px;
+  background-image: url("../images/Group-1.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  width: 554px;
+  margin-right: 22px;
+  margin-top: 83px;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "onum" on;
+  color: #3b464c;
+}
+
+.hero__paragraph {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  /* or 28px */
+
+  /* Colour 1 */
+
+  color: #3b464c;
+  margin-bottom: 55px;
+  margin-top: 32px;
+}
+
+.hero__link {
+  display: inline-block;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Colour2 */
+
+  background: #0062d1;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  font-feature-settings: "pnum" on, "onum" on;
+
+  color: #ffffff;
+}

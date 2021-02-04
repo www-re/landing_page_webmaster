@@ -1,0 +1,69 @@
+.position {
+  padding: 126px 0;
+}
+
+.position__title {
+  width: 572px;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 140%;
+  /* or 45px */
+
+  font-feature-settings: "pnum" on, "onum" on;
+
+  color: #3b464c;
+}
+
+.position__list {
+  margin-top: 40px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.position__item {
+  width: 320px;
+}
+
+.position__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.position__item-image {
+  width: 170px;
+  height: 170px;
+  margin-left: 40px;
+}
+
+.position__item:nth-child(1) .position__item-image {
+  background-image: url("../images/Web-Group-1.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.position__item:nth-child(2) .position__item-image {
+  background-image: url("../images/Web-Group-2.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.position__item:nth-child(3) .position__item-image {
+  background-image: url("../images/Web-Group-3.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.position__item-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  /* or 28px */
+
+  /* Colour 1 */
+
+  color: #3b464c;
+  margin-top: 40px;
+}
