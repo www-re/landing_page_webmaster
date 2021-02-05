@@ -17,12 +17,21 @@
         <div class="navigation">
           <a href="./index.html">
             <img
-              src="./images/logo-header.svg"
+              src="./images/mobile-logo.svg"
               alt="company logo"
               class="company__logo__header"
           /></a>
 
+          <div class="mobile__menu"></div>
+
           <ul class="navigation__list">
+            <li class="nav-close">
+              <img
+                class="close__icon"
+                src="./images/mobile-close.svg"
+                alt="close menu images"
+              />
+            </li>
             <li class="navigation__item">
               <a href="#about" class="navigation__link">О нас</a>
             </li>
@@ -252,12 +261,14 @@
           </li>
           <li class="footer__item">
             <div class="address">
-              <a class="address__link" href="mailto: hr@remotemployees.com"
-                >hr@remotemployees.com</a
-              >
-              <address class="address__address">
-                ул. Рымарская 22, Харьков, Украина
-              </address>
+              <div class="address__text--flex">
+                <a class="address__link" href="mailto: hr@remotemployees.com"
+                  >hr@remotemployees.com</a
+                >
+                <address class="address__address">
+                  ул. Рымарская 22, Харьков, Украина
+                </address>
+              </div>
               <ul class="address__soclink__list">
                 <li class="address__soclink__item">
                   <a href="#" class="soclink__link">
@@ -308,10 +319,10 @@
             </div>
           </li>
         </ul>
+        <p class="copyright">
+          RemotEmployees 2018-2020 &copy; All rights reserved
+        </p>
       </div>
-      <p class="copyright">
-        RemotEmployees 2018-2020 &copy; All rights reserved
-      </p>
     </footer>
     <img
       src="./images/fly-envelope.svg"

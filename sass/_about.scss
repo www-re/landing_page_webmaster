@@ -1,4 +1,8 @@
 .about {
+  @include for-size(mobile) {
+    padding-top: 69px;
+    padding-bottom: 75px;
+  }
   padding-top: 158px;
   padding-bottom: 150px;
   position: relative;
@@ -7,6 +11,15 @@
 
 // TODO: finish
 .about__image {
+  @include for-size(mobile) {
+    margin-top: 42px;
+    margin-bottom: 0;
+    width: 304px;
+    height: 226px;
+    background-position: bottom 0 left 95px, bottom 0 right 46px,
+      bottom 0 left 36px;
+    background-size: 75px, 111px, 103px;
+  }
   width: 570px;
   height: 550px;
   background-image: url("../images/Master-Group-3.png"),
@@ -20,6 +33,10 @@
 }
 
 .about__text {
+  @include for-size(mobile) {
+    margin-left: 0;
+    width: 304px;
+  }
   display: flex;
   flex-direction: column;
   width: 570px;
@@ -27,10 +44,18 @@
 }
 
 .about--flex {
+  @include for-size(mobile) {
+    flex-direction: column-reverse;
+  }
   display: flex;
 }
 
 .about__title {
+  @include for-size(mobile) {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+  }
   font-weight: 900;
   font-size: 32px;
   line-height: 140%;
@@ -44,10 +69,16 @@
 }
 
 .about__list {
+  @include for-size(mobile) {
+    padding-top: 42px;
+  }
   padding-top: 47px;
 }
 
 .about__item {
+  @include for-size(mobile) {
+    padding: 28px 15px 28px 21px;
+  }
   display: flex;
   align-items: center;
   justify-content: center;
@@ -58,10 +89,16 @@
 }
 
 .about__item:not(:last-child) {
+  @include for-size(mobile) {
+    margin-bottom: 25px;
+  }
   margin-bottom: 50px;
 }
 
 .about__item-text {
+  @include for-size(mobile) {
+    font-size: 16px;
+  }
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;

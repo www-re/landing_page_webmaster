@@ -1,7 +1,7 @@
 .wrapper {
   @include for-size(mobile) {
     padding: 0 8px;
-    width: 320px;
+    width: 100%;
   }
 
   max-width: 1366px;
@@ -15,6 +15,9 @@
 }
 
 .absolute--arrow {
+  @include for-size(mobile) {
+    display: none;
+  }
   position: absolute;
   top: 1466px;
   right: 108px;

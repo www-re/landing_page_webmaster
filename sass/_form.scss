@@ -1,24 +1,45 @@
 .form {
+  @include for-size(mobile) {
+    padding-bottom: 72px;
+  }
   padding-bottom: 120px;
 }
 
 .form--flex {
+  @include for-size(mobile) {
+    flex-direction: column-reverse;
+  }
   display: flex;
 }
 
 .form__image {
+  @include for-size(mobile) {
+    min-width: 248px;
+    height: 351px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 71px;
+  }
   min-width: 459px;
   height: 456px;
   margin-left: 100px;
   margin-right: 140px;
 
-  background-image: url("../images/Form-Group.png");
+  background-image: url("../images/Form-img-mobile.png");
   background-position: top 0 right 0;
-  background-size: contain;
+  background-size: 248px 351px;
   background-repeat: no-repeat;
 }
 
 .form__title {
+  @include for-size(mobile) {
+    width: 220px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+  }
   margin-top: 10px;
   margin-bottom: 21px;
 
@@ -33,6 +54,11 @@
 }
 
 .form__descr {
+  @include for-size(mobile) {
+    width: 173px;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
   margin-bottom: 27px;
 
   font-weight: 400;
@@ -46,6 +72,14 @@
 }
 
 .form__input {
+  @include for-size(mobile) {
+    width: 304px;
+    padding-left: 12px;
+    margin-bottom: 18px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 175%;
+  }
   width: 370px;
   height: 60px;
 
@@ -60,6 +94,9 @@
 }
 
 .form__input:focus {
+  @include for-size(mobile) {
+    border: 2px solid #0062d1;
+  }
   background: #ffffff;
 
   font-weight: 500;
@@ -73,6 +110,8 @@
 }
 
 .form__input::placeholder {
+  @include for-size(mobile) {
+  }
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
@@ -84,6 +123,9 @@
 }
 
 .form__button {
+  @include for-size(mobile) {
+    width: 304px;
+  }
   width: 370px;
   height: 60px;
 

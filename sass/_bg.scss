@@ -1,4 +1,7 @@
 body {
+  @include for-size(mobile) {
+    background: #ccc;
+  }
   background-color: #fff;
   background-image: url("../images/Vector-2.svg"), url("../images/Vector.png"),
     url("../images/Line.svg");

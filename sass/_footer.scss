@@ -1,19 +1,38 @@
 .footer {
+  @include for-size(mobile) {
+    padding-top: 60px;
+    padding-bottom: 117px;
+  }
   padding: 75px 0;
   background: #0062d1;
 }
 
 .footer__list {
+  @include for-size(mobile) {
+    flex-direction: column;
+  }
   display: flex;
   justify-content: space-between;
 }
 
 .footer__item:not(:last-child) {
+  @include for-size(mobile) {
+    margin: 0;
+  }
   margin-right: 130px;
 }
 
 .footer__item:last-child {
+  @include for-size(mobile) {
+    min-width: 305px;
+  }
   min-width: 344px;
+}
+
+.company__logo__footer {
+  @include for-size(mobile) {
+    width: 144px;
+  }
 }
 
 .numbers--flex {
@@ -21,6 +40,9 @@
 }
 
 .numbers__list {
+  @include for-size(mobile) {
+    margin-top: 45px;
+  }
   width: 140px;
 }
 
@@ -30,16 +52,29 @@
 }
 
 .numbers__item:not(:last-child) {
+  @include for-size(mobile) {
+    margin-bottom: 9px;
+  }
   margin-bottom: 27px;
 }
 
 .number__img {
+  @include for-size(mobile) {
+    width: 28px;
+    height: 28px;
+  }
   display: block;
   width: 30px;
   height: 30px;
 }
 
 .numbers__name {
+  @include for-size(mobile) {
+    padding-left: 13px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
   padding-left: 15px;
   font-weight: 600;
   font-size: 21px;
@@ -54,6 +89,10 @@
 
 .numbers__phone-phone,
 .numbers__phone-phone:visited {
+  @include for-size(mobile) {
+    font-size: 16px;
+    line-height: 140%;
+  }
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
@@ -65,6 +104,10 @@
 }
 
 .numbers__phone-list {
+  @include for-size(mobile) {
+    margin-left: 11px;
+    margin-top: 45px;
+  }
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,6 +115,13 @@
 }
 
 .address {
+  @include for-size(mobile) {
+    flex-direction: column-reverse;
+    margin-top: 37px;
+    height: auto;
+    align-items: flex-start;
+    width: 100%;
+  }
   height: 162px;
   display: flex;
   flex-direction: column;
@@ -80,6 +130,12 @@
 }
 
 .address__link {
+  @include for-size(mobile) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 12px;
+  }
   display: block;
   font-weight: 400;
   font-size: 18px;
@@ -94,6 +150,11 @@
 }
 
 .address__address {
+  @include for-size(mobile) {
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 0;
+  }
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
@@ -112,6 +173,10 @@
 }
 
 .address__soclink__item {
+  @include for-size(mobile) {
+    width: 32px;
+    height: 32px;
+  }
   width: 35px;
   height: 35px;
 }
@@ -121,12 +186,23 @@
 }
 
 .soclinks__image {
+  @include for-size(mobile) {
+    width: 32px;
+    height: 32px;
+  }
   display: block;
   width: 35px;
   height: 35px;
 }
 
 .copyright {
+  @include for-size(mobile) {
+    text-align: left;
+    font-size: 14px;
+    line-height: 140%;
+    padding-top: 36px;
+    width: 204px;
+  }
   padding-top: 70px;
   text-align: center;
   font-weight: 400;
@@ -137,4 +213,12 @@
   /* white */
 
   color: #ffffff;
+}
+
+.address__text--flex {
+  @include for-size(mobile) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 43px;
+  }
 }

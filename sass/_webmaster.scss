@@ -1,9 +1,18 @@
 .webmaster {
-  padding: 57px 65px 75px 65px;
+  @include for-size(mobile) {
+    padding: 39px 0 50px 0px;
+  }
+  padding: 39px 65px 75px 65px;
   background: #f2f7ff;
 }
 
 .webmaster__title {
+  @include for-size(mobile) {
+    width: 301px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 130%;
+  }
   width: 576px;
 
   font-weight: 900;
@@ -17,15 +26,23 @@
 }
 
 .webmaster__list {
+  @include for-size(mobile) {
+    margin-top: 44px;
+  }
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .webmaster__item {
+  @include for-size(mobile) {
+    width: 304px;
+    height: 74px;
+    padding-left: 16px;
+  }
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 
   width: 350px;
   height: 129px;
@@ -35,6 +52,10 @@
 }
 
 .webmaster__item:not(:last-child) {
+  @include for-size(mobile) {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
   margin-right: 30px;
 }
 
@@ -47,10 +68,16 @@
 }
 
 .webmaster__item:nth-child(7) {
+  @include for-size(mobile) {
+    margin-bottom: 25px;
+  }
   margin-bottom: 0;
 }
 
 .webmaster__item:nth-child(8) {
+  @include for-size(mobile) {
+    margin-bottom: 25px;
+  }
   margin-bottom: 0;
 }
 
@@ -59,6 +86,9 @@
 }
 
 .webmaster__item-text {
+  @include for-size(mobile) {
+    font-size: 16px;
+  }
   width: 330px;
   font-weight: 400;
   font-size: 20px;
