@@ -12,6 +12,18 @@
     <title>RemotEmployees</title>
   </head>
   <body>
+    <script type="text/javascript">
+      let submitted = false;
+    </script>
+
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="
+                if (submitted) {
+                  window.location = 'thank-you.html'}"
+    ></iframe>
     <header class="header">
       <div class="wrapper">
         <div class="navigation">
@@ -175,26 +187,32 @@
       <div class="wrapper">
         <div class="form--flex">
           <div class="form__image"></div>
-          <form action="">
+          <form
+            role="form"
+            action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfGH1WI7897UCHYXeJRK2gpY2WUQyQcSI6SrjN0yRPTPi0p2w/formResponse"
+            method="POST"
+            target="hidden_iframe"
+            onsubmit="submitted = true;"
+          >
             <h3 class="form__title">Откликнуться на вакансию</h3>
             <p class="form__descr">Заполните форму для подачи заявки</p>
             <input
               type="text"
-              name=""
+              name="entry.182541844"
               class="form__input"
               placeholder="Ф. И. О."
               required
             />
             <input
               type="text"
-              name=""
+              name="entry.1890553215"
               class="form__input"
               placeholder="Telegram/viber"
               required
             />
             <input
               type="email"
-              name=""
+              name="entry.353549403"
               class="form__input"
               placeholder="E-mail"
               required
