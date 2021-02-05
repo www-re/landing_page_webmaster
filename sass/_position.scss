@@ -12,8 +12,6 @@
     font-weight: 800;
     font-size: 24px;
     line-height: 130%;
-    margin-left: auto;
-    margin-right: auto;
   }
   width: 572px;
   font-weight: 900;
@@ -30,7 +28,9 @@
   @include for-size(mobile) {
     margin-top: 43px;
     flex-direction: column;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 304px;
   }
   margin-top: 40px;
   display: flex;
