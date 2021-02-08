@@ -1,0 +1,137 @@
+.header {
+  padding-top: 45px;
+  padding-bottom: 0;
+  @include for-size(mobile) {
+    padding-top: 23px;
+    padding-bottom: 50px;
+  }
+  @include for-size(mobile) {
+    background-image: url("../images/menu-elipse.svg");
+
+    background-position: right 0 top 5px;
+    background-repeat: no-repeat;
+  }
+}
+
+.thank-you {
+  padding-bottom: 162px;
+  @include for-size(mobile) {
+    padding-bottom: 63px;
+  }
+}
+
+.thank-you--flex {
+  display: flex;
+  @include for-size(mobile) {
+    flex-direction: column;
+  }
+}
+
+.thank-you__title {
+  width: 570px;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 51px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-feature-settings: "pnum" on, "onum" on;
+
+  /* Colour2 */
+
+  color: #0062d1;
+
+  margin-top: 154px;
+  margin-bottom: 23px;
+
+  @include for-size(mobile) {
+    margin-top: 0;
+    width: 305px;
+    font-size: 40px;
+    line-height: 49px;
+    text-transform: none;
+    margin-bottom: 24px;
+  }
+}
+
+.thank-you__paragraph {
+  width: 375px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  /* or 45px */
+
+  font-feature-settings: "pnum" on, "onum" on;
+
+  /* Colour 1 */
+
+  color: #3b464c;
+
+  margin-bottom: 39px;
+
+  @include for-size(mobile) {
+    width: 284px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+    margin-bottom: 49px;
+  }
+}
+
+.thank-you__link,
+.thank-you__link:visited {
+  width: 270px;
+  height: 61px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-feature-settings: "pnum" on, "onum" on;
+
+  color: #ffffff;
+  /* Colour2 */
+
+  background: #0062d1;
+  border-radius: 32px;
+
+  @include for-size(mobile) {
+    width: 304px;
+    height: 61px;
+    margin-bottom: 43px;
+  }
+}
+
+.thank-you__link:hover {
+  background: #ffffff;
+  /* Colour2 */
+  border: 2px solid #0062d1;
+  color: #7cb1ff;
+}
+
+.thank-you__link:active {
+  background: #7cb1ff;
+  color: #ffffff;
+}
+
+.thank-you__image {
+  display: block;
+  min-width: 705px;
+  height: 468px;
+  margin-left: -65px;
+
+  background-image: url("../images/Thank-you-Group.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include for-size(mobile) {
+    min-width: 305px;
+    height: 204px;
+    margin: 0;
+    background-image: url("../images/Thank-you-Group.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -3,9 +3,186 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>RemotEmployees</title>
+    <link rel="stylesheet" href="./style/thankYou.min.css" />
   </head>
   <body>
-    <a href="./index.html">Back</a>
+    <header class="header">
+      <div class="wrapper">
+        <div class="navigation">
+          <a href="./index.html">
+            <img
+              src="./images/mobile-logo.svg"
+              alt="company logo"
+              class="company__logo__header"
+          /></a>
+
+          <div class="mobile__menu open"></div>
+
+          <ul class="navigation__list">
+            <li class="nav-close">
+              <img
+                class="close__icon close"
+                src="./images/mobile-close.svg"
+                alt="close menu images"
+              />
+            </li>
+            <li class="navigation__item">
+              <a href="#about" class="navigation__link">О нас</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#webmaster" class="navigation__link">Требования</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#form" class="navigation__link">Подать заявку</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section class="thank-you">
+      <div class="wrapper">
+        <div class="thank-you--flex">
+          <div class="thank-you__text">
+            <h1 class="thank-you__title">Спасибо, что оставили заявку!</h1>
+            <p class="thank-you__paragraph">
+              Мы свяжемся с вами в ближайшее время
+            </p>
+            <a href="./index.html" class="thank-you__link">На главную</a>
+          </div>
+          <div class="thank-you__image"></div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="footer">
+      <div class="wrapper">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="./index.html" class="footer__logo">
+              <img
+                src="./images/logo-footer.svg"
+                alt="company logo"
+                class="company__logo__footer"
+            /></a>
+          </li>
+          <li class="footer__item">
+            <div class="numbers--flex">
+              <ul class="numbers__list">
+                <li class="numbers__item">
+                  <img
+                    src="./images/viber.svg"
+                    alt="viber image"
+                    class="numbers__img"
+                  /><span class="numbers__name">Валерия</span>
+                </li>
+                <li class="numbers__item">
+                  <img
+                    src="./images/viber.svg"
+                    alt="viber image"
+                    class="numbers__img"
+                  /><span class="numbers__name second">Анна</span>
+                </li>
+                <li class="numbers__item">
+                  <img
+                    src="./images/viber.svg"
+                    alt="viber image"
+                    class="numbers__img"
+                  /><span class="numbers__name">Валерия</span>
+                </li>
+              </ul>
+              <ul class="numbers__phone-list">
+                <li class="numbers__phone-item">
+                  <a href="tel:+380666146404" class="numbers__phone-phone"
+                    >+380666146404</a
+                  >
+                </li>
+                <li class="numbers__phone-item">
+                  <a href="tel:+380960933838" class="numbers__phone-phone"
+                    >+380960933838</a
+                  >
+                </li>
+                <li class="numbers__phone-item">
+                  <a href="tel:+380994160329" class="numbers__phone-phone"
+                    >+380994160329</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item">
+            <div class="address">
+              <div class="address__text--flex">
+                <a class="address__link" href="mailto: hr@remotemployees.com"
+                  >hr@remotemployees.com</a
+                >
+                <address class="address__address">
+                  ул. Рымарская 22, Харьков, Украина
+                </address>
+              </div>
+              <ul class="address__soclink__list">
+                <li class="address__soclink__item">
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/insta.svg"
+                      alt="instagram image"
+                      class="soclinks__image"
+                    />
+                  </a>
+                </li>
+                <li class="address__soclink__item">
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/fb.svg"
+                      alt="facebook image"
+                      class="soclinks__image"
+                    />
+                  </a>
+                </li>
+                <li class="address__soclink__item">
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/tg.svg"
+                      alt="telegram image"
+                      class="soclinks__image"
+                    />
+                  </a>
+                </li>
+                <li class="address__soclink__item">
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/viber.svg"
+                      alt="viber image"
+                      class="soclinks__image"
+                    />
+                  </a>
+                </li>
+                <li class="address__soclink__item">
+                  <a href="#" class="soclink__link">
+                    <img
+                      src="./images/whatsapp.svg"
+                      alt="whatsapp image"
+                      class="soclinks__image"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <p class="copyright">
+          RemotEmployees 2018-2020 &copy; All rights reserved
+        </p>
+      </div>
+    </footer>
+
+    <!-- s -->
+    <script src="./script.js"></script>
   </body>
 </html>
