@@ -1,4 +1,4 @@
-body {
+.background-top {
   @include for-size(mobile) {
     background-color: #fff;
     background-image: url("../images/Mobile-bg-Vector.png");
@@ -7,10 +7,19 @@ body {
     background-repeat: no-repeat;
   }
   background-color: #fff;
-  background-image: url("../images/Vector-2.svg"), url("../images/Vector.png"),
-    url("../images/Line.svg");
-  background-size: 92px, 892px, 4px 640px;
-  background-position: right 799px top 466px, right 0 top 0,
-    right 533px top 910px;
+  background-image: url("../images/Vector-2.svg"), url("../images/Vector.png");
+  background-size: 92px, 892px;
+  background-position: right 799px top 466px, right 0 top 0;
+  background-repeat: no-repeat;
+}
+
+.background-about {
+  @include for-size(mobile) {
+    background-color: #fff;
+  }
+  // background-color: #fff;
+  background-image: url("../images/Line.svg");
+  background-size: 4px 640px;
+  background-position: right 533px top 248px;
   background-repeat: no-repeat;
 }
