@@ -70,6 +70,9 @@
 }
 
 .navigation__link:hover {
+  @include for-size(mobile) {
+    color: #3b464c;
+  }
   border-bottom: 1px solid #3b464ca4;
   color: #0062d1;
 }
