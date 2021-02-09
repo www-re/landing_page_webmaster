@@ -103,6 +103,10 @@
   color: #ffffff;
 }
 
+.numbers__phone-phone:hover {
+  color: #7cb1ff;
+}
+
 .numbers__phone-list {
   @include for-size(mobile) {
     margin-left: 11px;
@@ -149,6 +153,10 @@
   margin-bottom: 25px;
 }
 
+.address__link:hover {
+  color: #7cb1ff;
+}
+
 .address__address {
   @include for-size(mobile) {
     font-size: 16px;
@@ -179,6 +187,11 @@
   }
   width: 35px;
   height: 35px;
+}
+
+.address__soclink__item:hover {
+  border-radius: 5px;
+  background-color: #7cb1ff;
 }
 
 .address__soclink__item:not(:last-child) {

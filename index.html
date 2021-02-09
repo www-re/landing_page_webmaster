@@ -176,14 +176,14 @@
           </li>
           <li class="position__item">
             <div class="position__item-image"></div>
-            <p class="position__item-text">
+            <p class="position__item-text" id="form">
               Оптимизация и анализ трафика в соответствии с запросом клиента
             </p>
           </li>
         </ul>
       </div>
     </section>
-    <section class="form" id="form">
+    <section class="form">
       <div class="wrapper">
         <div class="form--flex">
           <div class="form__image"></div>
@@ -198,13 +198,15 @@
             <p class="form__descr">Заполните форму для подачи заявки</p>
             <input
               type="text"
+              pattern="[а-яА-Я]+"
               name="entry.182541844"
               class="form__input"
               placeholder="Ф. И. О."
               required
             />
             <input
-              type="text"
+              type="tel"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
               name="entry.1890553215"
               class="form__input"
               placeholder="Telegram/viber"
@@ -260,17 +262,23 @@
               </ul>
               <ul class="numbers__phone-list">
                 <li class="numbers__phone-item">
-                  <a href="tel:+380666146404" class="numbers__phone-phone"
+                  <a
+                    href="viber://chat?number=380666146404"
+                    class="numbers__phone-phone"
                     >+380666146404</a
                   >
                 </li>
                 <li class="numbers__phone-item">
-                  <a href="tel:+380960933838" class="numbers__phone-phone"
+                  <a
+                    href="viber://chat?number=380960933838"
+                    class="numbers__phone-phone"
                     >+380960933838</a
                   >
                 </li>
                 <li class="numbers__phone-item">
-                  <a href="tel:+380994160329" class="numbers__phone-phone"
+                  <a
+                    href="viber://chat?number=380994160329"
+                    class="numbers__phone-phone"
                     >+380994160329</a
                   >
                 </li>
@@ -280,7 +288,10 @@
           <li class="footer__item">
             <div class="address">
               <div class="address__text--flex">
-                <a class="address__link" href="mailto: hr@remotemployees.com"
+                <a
+                  class="address__link"
+                  href="mailto:hr@remotemployees.com"
+                  target="_blank"
                   >hr@remotemployees.com</a
                 >
                 <address class="address__address">
@@ -289,7 +300,10 @@
               </div>
               <ul class="address__soclink__list">
                 <li class="address__soclink__item">
-                  <a href="#" class="soclink__link">
+                  <a
+                    href="https://www.instagram.com/remotemployees/"
+                    class="soclink__link"
+                  >
                     <img
                       src="./images/insta.svg"
                       alt="instagram image"
@@ -298,7 +312,7 @@
                   </a>
                 </li>
                 <li class="address__soclink__item">
-                  <a href="#" class="soclink__link">
+                  <a href="https://fb.com/remotemployees" class="soclink__link">
                     <img
                       src="./images/fb.svg"
                       alt="facebook image"
@@ -307,7 +321,7 @@
                   </a>
                 </li>
                 <li class="address__soclink__item">
-                  <a href="#" class="soclink__link">
+                  <a href="https://t.me/remotemployees" class="soclink__link">
                     <img
                       src="./images/tg.svg"
                       alt="telegram image"
@@ -316,7 +330,10 @@
                   </a>
                 </li>
                 <li class="address__soclink__item">
-                  <a href="#" class="soclink__link">
+                  <a
+                    href="viber://chat?number=380666146404"
+                    class="soclink__link"
+                  >
                     <img
                       src="./images/viber.svg"
                       alt="viber image"
@@ -325,7 +342,7 @@
                   </a>
                 </li>
                 <li class="address__soclink__item">
-                  <a href="#" class="soclink__link">
+                  <a href="https://wa.me/380666146404" class="soclink__link">
                     <img
                       src="./images/whatsapp.svg"
                       alt="whatsapp image"
