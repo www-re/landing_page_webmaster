@@ -100,3 +100,13 @@
 
   color: #3b464c;
 }
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .webmaster__item {
+    width: 310px;
+
+    .webmaster__item-text {
+      font-size: 18px;
+    }
+  }
+}
