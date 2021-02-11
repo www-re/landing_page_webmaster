@@ -32,10 +32,20 @@
 .company__logo__footer {
   @include for-size(mobile) {
     width: 144px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .numbers--flex {
+  @include for-size(mobile) {
+    max-width: 304px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
   display: flex;
 }
 
@@ -178,6 +188,9 @@
 .address__soclink__list {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .address__soclink__item {
@@ -214,7 +227,9 @@
     font-size: 14px;
     line-height: 140%;
     padding-top: 36px;
-    width: 204px;
+    max-width: 204px;
+    margin-left: auto;
+    margin-right: auto;
   }
   padding-top: 70px;
   text-align: center;
@@ -231,7 +246,11 @@
 .address__text--flex {
   @include for-size(mobile) {
     display: flex;
+    max-width: 304px;
     flex-direction: column;
+    align-items: center;
     padding-top: 43px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

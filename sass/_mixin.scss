@@ -1,9 +1,10 @@
 @mixin for-size($range) {
   $mobile: 320px;
+  $tablet: 767px;
   $desktop: 1000px;
 
   @if $range == mobile {
-    @media (min-width: $mobile) and (max-width: $desktop) {
+    @media (min-width: $mobile) and (max-width: $tablet) {
       @content;
     }
   }

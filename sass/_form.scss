@@ -7,18 +7,28 @@
 
 .form--flex {
   @include for-size(mobile) {
+    max-width: 100%;
     display: flex;
     flex-direction: column-reverse;
   }
   display: flex;
 }
 
+.form form {
+  @include for-size(mobile) {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .form__image {
   @include for-size(mobile) {
-    min-width: 248px;
+    max-width: 304px;
+    margin-left: auto;
+    margin-right: auto;
     height: 351px;
-    margin-left: 0;
-    margin-right: 0;
+
     margin-top: 71px;
 
     background-image: url("../images/Form-img-mobile.png");
@@ -39,12 +49,15 @@
 
 .form__title {
   @include for-size(mobile) {
-    width: 220px;
+    max-width: 304px;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 15px;
     font-weight: 800;
     font-size: 24px;
     line-height: 130%;
+    margin-left: auto;
+    margin-right: auto;
   }
   margin-top: 10px;
   margin-bottom: 21px;
@@ -61,9 +74,12 @@
 
 .form__descr {
   @include for-size(mobile) {
-    width: 173px;
+    max-width: 304px;
+    text-align: center;
     font-size: 16px;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
   }
   margin-bottom: 27px;
 
@@ -79,7 +95,7 @@
 
 .form__input {
   @include for-size(mobile) {
-    width: 304px;
+    max-width: 100%;
     padding-left: 12px;
     margin-bottom: 18px;
     font-weight: normal;
@@ -131,7 +147,7 @@
 
 .form__button {
   @include for-size(mobile) {
-    width: 304px;
+    max-width: 100%;
   }
   width: 370px;
   height: 60px;
