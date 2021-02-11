@@ -11,11 +11,19 @@
     display: flex;
     flex-direction: column-reverse;
   }
+  @include for-size(tablet) {
+    flex-direction: column-reverse;
+  }
   display: flex;
 }
 
 .form form {
   @include for-size(mobile) {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include for-size(tablet) {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -27,6 +35,9 @@
     margin: auto;
     margin-right: 50px;
     max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
   }
   @include for-size(mobile) {
     max-width: 304px;
@@ -107,6 +118,10 @@
     font-size: 16px;
     line-height: 175%;
   }
+  @include for-size(tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   display: block;
   width: 370px;
   height: 60px;
@@ -153,6 +168,10 @@
 .form__button {
   @include for-size(mobile) {
     max-width: 100%;
+  }
+  @include for-size(tablet) {
+    margin-left: auto;
+    margin-right: auto;
   }
   width: 370px;
   height: 60px;

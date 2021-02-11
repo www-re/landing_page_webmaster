@@ -171,11 +171,25 @@
   }
 }
 
-@media (min-width: 1020px) and (max-width: 1090px) {
+@media (min-width: 1020px) and (max-width: 1089px) {
   .webmaster__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
-  .webmaster__item:last-child {
+  .webmaster__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+// Desktop
+@media (min-width: 1090px) and (max-width: 1250px) {
+  .webmaster__item {
+    max-width: 270px;
+  }
+
+  .webmaster__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .webmaster__item:nth-child(3n) {
     margin-right: 0;
   }
 }

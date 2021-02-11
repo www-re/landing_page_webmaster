@@ -36,3 +36,8 @@
   right: 108px;
   z-index: 1;
 }
+@media (min-width: 1600px) {
+  .absolute--arrow {
+    display: none;
+  }
+}
