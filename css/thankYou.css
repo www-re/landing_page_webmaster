@@ -248,10 +248,6 @@ summary {
   display: list-item;
 }
 
-* {
-  outline: 1px dashed red;
-}
-
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -305,6 +301,18 @@ img {
 }
 
 @media (max-width: 767px) {
+  .bg-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1089px) {
+  .bg-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1090px) {
   .bg-wrapper {
     max-width: 100%;
   }
