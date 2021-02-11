@@ -59,6 +59,10 @@
 }
 
 .position__item-image {
+  @include for-size(tablet) {
+    margin-left: auto;
+    margin-right: auto;
+  }
   @include for-size(mobile) {
     width: 100px;
     height: 100px;

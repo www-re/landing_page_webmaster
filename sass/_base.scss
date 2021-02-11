@@ -25,6 +25,9 @@
 }
 
 .absolute--arrow {
+  @include for-size(tablet) {
+    display: none;
+  }
   @include for-size(mobile) {
     display: none;
   }

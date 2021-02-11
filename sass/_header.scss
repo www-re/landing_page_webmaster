@@ -25,6 +25,10 @@
 }
 
 .navigation__list {
+  @include for-size(tablet) {
+    padding-left: 40px;
+    padding-bottom: 0;
+  }
   @include for-size(mobile) {
     display: none;
   }
@@ -45,6 +49,11 @@
 
 .navigation__link,
 .navigation__link:visited {
+  @include for-size(tablet) {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
   @include for-size(mobile) {
     font-weight: 600;
     font-size: 22px;
@@ -60,7 +69,7 @@
   font-size: 18px;
   line-height: 22px;
   /* identical to box height */
-  padding: 5px 0;
+  // padding: 5px 0;
 
   font-feature-settings: "pnum" on, "onum" on, "case" on;
 

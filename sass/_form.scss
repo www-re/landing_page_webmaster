@@ -23,6 +23,11 @@
 }
 
 .form__image {
+  @include for-size(tablet) {
+    margin: auto;
+    margin-right: 50px;
+    max-height: 400px;
+  }
   @include for-size(mobile) {
     max-width: 304px;
     margin-left: auto;

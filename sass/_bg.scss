@@ -1,4 +1,7 @@
 .background-top {
+  @include for-size(tablet) {
+    background-position: right 599px top 166px, right 0 top 0;
+  }
   @include for-size(mobile) {
     background-color: #fff;
     background-image: url("../images/Mobile-bg-Vector.png");
@@ -16,6 +19,7 @@
 .background-about {
   @include for-size(mobile) {
     background-color: #fff;
+    background-image: none;
   }
   // background-color: #fff;
   background-image: url("../images/Line.svg");
