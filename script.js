@@ -4,14 +4,29 @@ const refs = {
   mobileMenuRef: document.querySelector(".navigation__list"),
 };
 
-refs.iconOpenRef.addEventListener("click", () => {
-  refs.iconOpenRef.style.display = "none";
-  refs.mobileMenuRef.classList.add("active");
-  refs.iconCloseRef.style.display = "block";
-});
+const { iconOpenRef, iconCloseRef, mobileMenuRef } = refs;
 
-refs.iconCloseRef.addEventListener("click", () => {
-  refs.iconOpenRef.style.display = "block";
-  refs.iconCloseRef.style.display = "none";
-  refs.mobileMenuRef.classList.remove("active");
+function onMobileMenuOpen() {
+  iconOpenRef.style.display = "none";
+  mobileMenuRef.classList.add("active");
+  iconCloseRef.style.display = "block";
+}
+
+function onMobileMenuClose(event) {
+  iconOpenRef.style.display = "block";
+  iconCloseRef.style.display = "none";
+  mobileMenuRef.classList.remove("active");
+}
+
+iconOpenRef.addEventListener("click", onMobileMenuOpen);
+
+iconCloseRef.addEventListener("click", onMobileMenuClose);
+
+mobileMenuRef.addEventListener("click", (event) => {
+  if (event.target.tagName === "UL") {
+    onMobileMenuClose();
+  }
+  if (event.target.tagName === "A") {
+    onMobileMenuClose();
+  }
 });

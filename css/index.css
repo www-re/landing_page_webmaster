@@ -325,6 +325,10 @@ img {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1300px;
   padding: 0 65px;
@@ -530,7 +534,7 @@ img {
   .active {
     display: block;
     background: #0062d1;
-    padding: 28px 8px;
+    padding: 35px 8px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
