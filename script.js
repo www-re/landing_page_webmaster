@@ -12,7 +12,7 @@ function onMobileMenuOpen() {
   iconCloseRef.style.display = "block";
 }
 
-function onMobileMenuClose(event) {
+function onMobileMenuClose() {
   iconOpenRef.style.display = "block";
   iconCloseRef.style.display = "none";
   mobileMenuRef.classList.remove("active");
@@ -23,7 +23,7 @@ iconOpenRef.addEventListener("click", onMobileMenuOpen);
 iconCloseRef.addEventListener("click", onMobileMenuClose);
 
 mobileMenuRef.addEventListener("click", (event) => {
-  if (event.target.tagName === "UL") {
+  if (event.target === mobileMenuRef) {
     onMobileMenuClose();
   }
   if (event.target.tagName === "A") {
