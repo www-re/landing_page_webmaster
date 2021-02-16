@@ -368,7 +368,7 @@ html {
   .header {
     padding: 29px 0 43px 0;
     background-image: url("../images/menu-elipse.svg");
-    background-position: right 65px top 10px;
+    background-position: right 65px top 30px;
     background-repeat: no-repeat;
   }
 }
@@ -377,6 +377,14 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (min-width: 768px) and (max-width: 1089px) {
+  .navigation {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .company__logo__header {

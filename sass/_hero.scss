@@ -1,3 +1,9 @@
+.hero {
+  @include for-size(tablet) {
+    padding-top: 40px;
+  }
+}
+
 .hero--flex {
   @include for-size(mobile) {
     flex-direction: column-reverse;

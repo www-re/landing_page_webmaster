@@ -8,7 +8,7 @@
   @include for-size(tablet) {
     padding: 29px 0 43px 0;
     background-image: url("../images/menu-elipse.svg");
-    background-position: right 65px top 10px;
+    background-position: right 65px top 30px;
     background-repeat: no-repeat;
   }
   padding: 49px 0 63px;
@@ -16,6 +16,9 @@
 
 .navigation {
   @include for-size(mobile) {
+  }
+  @include for-size(tablet) {
+    align-items: center;
   }
   display: flex;
 }
