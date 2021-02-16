@@ -60,7 +60,6 @@
     justify-content: space-between;
     align-items: stretch;
   }
-
   display: flex;
 }
 
@@ -104,11 +103,6 @@
   font-weight: 600;
   font-size: 21px;
   line-height: 175%;
-  // letter-spacing: 0.05em;
-  /* identical to box height, or 37px */
-
-  /* white */
-
   color: #ffffff;
 }
 
@@ -121,15 +115,13 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  /* identical to box height, or 31px */
-
-  /* white */
-
   color: #ffffff;
+  transition: 300ms ease;
 }
 
 .numbers__phone-phone:hover {
   color: #7cb1ff;
+  transition: 300ms ease;
 }
 
 .numbers__phone-list {
@@ -175,17 +167,15 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  /* identical to box height, or 31px */
-
-  /* white */
-
   color: #ffffff;
 
   margin-bottom: 25px;
+  transition: 300ms ease;
 }
 
 .address__link:hover {
   color: #7cb1ff;
+  transition: 300ms ease;
 }
 
 .address__address {
@@ -197,12 +187,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  /* identical to box height, or 31px */
-
-  /* white */
-
   color: #ffffff;
-
   margin-bottom: 31px;
 }
 
@@ -221,11 +206,13 @@
   }
   width: 35px;
   height: 35px;
+  transition: 300ms ease;
 }
 
 .address__soclink__item:hover {
   border-radius: 5px;
   background-color: #7cb1ff;
+  transition: 300ms ease;
 }
 
 .address__soclink__item:not(:last-child) {
@@ -257,10 +244,6 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  /* identical to box height, or 31px */
-
-  /* white */
-
   color: #ffffff;
 }
 

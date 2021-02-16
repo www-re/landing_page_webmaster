@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! modern-normalize v0.7.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -490,11 +489,11 @@ html {
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
   -webkit-font-feature-settings: "pnum" on, "onum" on, "case" on;
           font-feature-settings: "pnum" on, "onum" on, "case" on;
-  /* Colour 1 */
   color: #3b464c;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (min-width: 768px) and (max-width: 1089px) {
@@ -513,15 +512,15 @@ html {
     font-weight: 600;
     font-size: 22px;
     line-height: 140%;
-    /* identical to box height, or 31px */
     color: #ffffff;
-    /* Inside Auto Layout */
   }
 }
 
 .navigation__link:hover {
   border-bottom: 1px solid #3b464ca4;
   color: #0062d1;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
@@ -705,7 +704,6 @@ html {
     line-height: 48px;
     margin-left: auto;
     margin-right: auto;
-    /* identical to box height */
   }
 }
 
@@ -713,8 +711,6 @@ html {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  /* or 28px */
-  /* Colour 1 */
   color: #3b464c;
   margin-bottom: 55px;
   margin-top: 32px;
@@ -744,7 +740,6 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /* Colour2 */
   background: #0062d1;
   border-radius: 30px;
   font-weight: 600;
@@ -753,6 +748,8 @@ html {
   -webkit-font-feature-settings: "pnum" on, "onum" on;
           font-feature-settings: "pnum" on, "onum" on;
   color: #ffffff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
@@ -765,15 +762,18 @@ html {
 
 .hero__link:hover {
   background: #ffffff;
-  /* Colour2 */
   border: 2px solid #0062d1;
   color: #7cb1ff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .hero__link:active {
   background: #7cb1ff;
   border: none;
   color: #fff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .about {
@@ -946,7 +946,6 @@ html {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  /* or 28px */
   color: #000000;
 }
 
@@ -979,7 +978,6 @@ html {
   font-weight: 900;
   font-size: 32px;
   line-height: 140%;
-  /* or 45px */
   -webkit-font-feature-settings: "pnum" on, "onum" on;
           font-feature-settings: "pnum" on, "onum" on;
   color: #3b464c;
@@ -1160,8 +1158,6 @@ html {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  /* or 28px */
-  /* Colour 1 */
   color: #3b464c;
 }
 
@@ -1228,7 +1224,6 @@ html {
   font-weight: 900;
   font-size: 32px;
   line-height: 140%;
-  /* or 45px */
   -webkit-font-feature-settings: "pnum" on, "onum" on;
           font-feature-settings: "pnum" on, "onum" on;
   color: #3b464c;
@@ -1349,8 +1344,6 @@ html {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  /* or 28px */
-  /* Colour 1 */
   color: #3b464c;
   margin-top: 40px;
 }
@@ -1458,8 +1451,6 @@ html {
   font-weight: 900;
   font-size: 32px;
   line-height: 140%;
-  /* identical to box height, or 45px */
-  /* Colour 1 */
   color: #3b464c;
 }
 
@@ -1482,8 +1473,6 @@ html {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
-  /* identical to box height, or 28px */
-  /* Colour 1 */
   color: #3b464c;
 }
 
@@ -1510,6 +1499,8 @@ html {
   outline: none;
   padding-left: 15px;
   margin-bottom: 20px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
@@ -1533,10 +1524,10 @@ html {
 .form__input:focus {
   background: #ffffff;
   font-weight: 500;
-  /* identical to box height */
   color: #37474f;
-  /* Colour2 */
   border: 4px solid #0062d1;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
@@ -1549,8 +1540,6 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
-  /* identical to box height, or 28px */
-  /* light grey */
   color: #7a7a7a;
 }
 
@@ -1558,8 +1547,6 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
-  /* identical to box height, or 28px */
-  /* light grey */
   color: #7a7a7a;
 }
 
@@ -1567,8 +1554,6 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
-  /* identical to box height, or 28px */
-  /* light grey */
   color: #7a7a7a;
 }
 
@@ -1576,15 +1561,12 @@ html {
   font-weight: 400;
   font-size: 16px;
   line-height: 175%;
-  /* identical to box height, or 28px */
-  /* light grey */
   color: #7a7a7a;
 }
 
 .form__button {
   width: 370px;
   height: 60px;
-  /* Colour2 */
   background: #0062d1;
   border-radius: 30px;
   display: -webkit-box;
@@ -1599,13 +1581,13 @@ html {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
   -webkit-font-feature-settings: "pnum" on, "onum" on;
           font-feature-settings: "pnum" on, "onum" on;
-  /* Белый */
   color: #ffffff;
   outline: none;
   border: none;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
@@ -1623,15 +1605,18 @@ html {
 
 .form__button:hover {
   background: #ffffff;
-  /* Colour2 */
   border: 2px solid #0062d1;
   color: #7cb1ff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .form__button:active {
   background: #7cb1ff;
   border: none;
   color: #fff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .footer {
@@ -1792,8 +1777,6 @@ html {
   font-weight: 600;
   font-size: 21px;
   line-height: 175%;
-  /* identical to box height, or 37px */
-  /* white */
   color: #ffffff;
 }
 
@@ -1811,9 +1794,9 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  /* identical to box height, or 31px */
-  /* white */
   color: #ffffff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
@@ -1826,6 +1809,8 @@ html {
 
 .numbers__phone-phone:hover {
   color: #7cb1ff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .numbers__phone-list {
@@ -1897,10 +1882,10 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  /* identical to box height, or 31px */
-  /* white */
   color: #ffffff;
   margin-bottom: 25px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
@@ -1914,14 +1899,14 @@ html {
 
 .address__link:hover {
   color: #7cb1ff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .address__address {
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  /* identical to box height, or 31px */
-  /* white */
   color: #ffffff;
   margin-bottom: 31px;
 }
@@ -1951,6 +1936,8 @@ html {
 .address__soclink__item {
   width: 35px;
   height: 35px;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 @media (max-width: 767px) {
@@ -1963,6 +1950,8 @@ html {
 .address__soclink__item:hover {
   border-radius: 5px;
   background-color: #7cb1ff;
+  -webkit-transition: 300ms ease;
+  transition: 300ms ease;
 }
 
 .address__soclink__item:not(:last-child) {
@@ -1988,8 +1977,6 @@ html {
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
-  /* identical to box height, or 31px */
-  /* white */
   color: #ffffff;
 }
 
