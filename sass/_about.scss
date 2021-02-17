@@ -88,13 +88,16 @@
 .about__list {
   @include for-size(mobile) {
     padding-top: 42px;
+    margin-left: auto;
+    margin-right: auto;
   }
   padding-top: 47px;
 }
 
 .about__item {
   @include for-size(mobile) {
-    padding: 28px 15px 28px 21px;
+    padding: 28px 21px 28px 21px;
+    max-width: 415px;
   }
   display: flex;
   align-items: center;
@@ -115,6 +118,10 @@
 .about__item-text {
   @include for-size(mobile) {
     font-size: 16px;
+    // text-align: center;
+  }
+  @include for-size(tablet) {
+    text-align: center;
   }
   font-weight: 400;
   font-size: 20px;

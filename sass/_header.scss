@@ -5,12 +5,6 @@
     background-position: right 0 top 8px;
     background-repeat: no-repeat;
   }
-  @include for-size(tablet) {
-    padding: 29px 0 43px 0;
-    background-image: url("../images/menu-elipse.svg");
-    background-position: right 65px top 30px;
-    background-repeat: no-repeat;
-  }
   padding: 49px 0 63px;
 }
 
@@ -34,7 +28,7 @@
 
 .navigation__list {
   @include for-size(tablet) {
-    display: none;
+    padding-left: 20px;
   }
   @include for-size(mobile) {
     display: none;
@@ -46,33 +40,16 @@
   padding-bottom: 10px;
 }
 
-.navigation__item {
-  @include for-size(tablet) {
-    text-align: center;
-    margin-right: 0;
-  }
-}
-
 .navigation__item:not(:last-child) {
   @include for-size(mobile) {
     margin-bottom: 35px;
   }
-  @include for-size(tablet) {
-    text-align: center;
-    margin-bottom: 35px;
-    margin-right: 0;
-  }
+
   margin-right: 40px;
 }
 
 .navigation__link,
 .navigation__link:visited {
-  @include for-size(tablet) {
-    display: block;
-    text-align: center;
-    width: 100%;
-    color: #ffffff;
-  }
   @include for-size(mobile) {
     font-weight: 600;
     font-size: 22px;
@@ -110,28 +87,10 @@
     width: 16px;
     height: 16px;
   }
-  @include for-size(tablet) {
-    display: block;
-    margin-left: auto;
-    padding-bottom: 27px;
-    width: 16px;
-    height: 16px;
-  }
 }
 
 .mobile__menu {
   @include for-size(mobile) {
-    display: block;
-    margin-left: auto;
-    padding-bottom: 27px;
-    width: 21px;
-    height: 15px;
-    background-image: url("../images/menu.svg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  @include for-size(tablet) {
     display: block;
     margin-left: auto;
     padding-bottom: 27px;
@@ -157,19 +116,18 @@
     width: 100%;
     height: 386px;
   }
-  @include for-size(tablet) {
-    display: block;
-    background: #0062d1;
-    padding: 35px 8px;
-    flex-direction: column;
-    align-items: flex-start;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 386px;
-  }
 }
 .close {
   display: none;
+}
+
+@media (min-width: 767px) and (max-width: 1020px) {
+  .company__logo__header {
+    width: 184px;
+    height: auto;
+  }
+  .navigation__link {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

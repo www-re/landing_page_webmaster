@@ -163,6 +163,13 @@
     line-height: 140%;
     margin-bottom: 12px;
   }
+  @include for-size(tablet) {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 140%;
+    margin-bottom: 12px;
+    text-align: center;
+  }
   display: block;
   font-weight: 400;
   font-size: 18px;
@@ -236,6 +243,12 @@
     line-height: 140%;
     padding-top: 36px;
     max-width: 204px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  @include for-size(tablet) {
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
   }

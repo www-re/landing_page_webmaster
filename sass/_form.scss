@@ -37,7 +37,7 @@
     max-height: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
+    margin-top: 80px;
   }
   @include for-size(mobile) {
     max-width: 304px;
@@ -55,7 +55,7 @@
   margin-left: 100px;
   margin-right: 140px;
   background-image: url("../images/Form-Group.png");
-  background-position: top 0 right 0;
+  background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -108,6 +108,8 @@
   @include for-size(tablet) {
     margin-left: auto;
     margin-right: auto;
+    padding-left: 20px;
+    width: 100%;
   }
   display: block;
   width: 370px;
@@ -150,6 +152,7 @@
   @include for-size(tablet) {
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
   }
   width: 370px;
   height: 60px;
@@ -180,4 +183,10 @@
   border: none;
   color: #fff;
   transition: 300ms ease;
+}
+
+@media (min-width: 1090px) and (max-width: 1300px) {
+  .form__image {
+    margin-right: 60px;
+  }
 }
