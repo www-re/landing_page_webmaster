@@ -673,7 +673,7 @@ html {
   width: 705px;
   height: 468px;
   margin-left: -65px;
-  background-image: url("../images/Thank-you-Group.png");
+  background-image: url("../images/thank-you-img.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -684,7 +684,7 @@ html {
     max-width: 305px;
     height: 204px;
     margin: 0;
-    background-image: url("../images/Thank-you-Group.png");
+    background-image: url("../images/thank-you-img.svg");
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;

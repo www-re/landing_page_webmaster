@@ -282,7 +282,7 @@ img {
 
 .background-top {
   background-color: #fff;
-  background-image: url("../images/Vector-2.svg"), url("../images/Vector.png");
+  background-image: url("../images/envelope.svg"), url("../images/top-page-vector.svg");
   background-size: 92px, 892px;
   background-position: right 799px top 466px, right 0 top 0;
   background-repeat: no-repeat;
@@ -297,7 +297,7 @@ img {
 @media (max-width: 767px) {
   .background-top {
     background-color: #fff;
-    background-image: url("../images/Mobile-bg-Vector.png");
+    background-image: url("../images/top-page-vector.svg");
     background-size: 100%;
     background-position: right 0 top 0;
     background-repeat: no-repeat;
@@ -305,7 +305,7 @@ img {
 }
 
 .background-about {
-  background-image: url("../images/Line.svg");
+  background-image: url("../images/line.svg");
   background-size: 4px 640px;
   background-position: right 533px top 248px;
   background-repeat: no-repeat;
@@ -593,7 +593,7 @@ html {
 .hero__image {
   width: 561.32px;
   height: 482px;
-  background-image: url("../images/Group-1.png");
+  background-image: url("../images/hero-image.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -758,7 +758,7 @@ html {
 .about__image {
   width: 570px;
   height: 550px;
-  background-image: url("../images/Master-Group-3.png"), url("../images/Master-Group-2.png"), url("../images/Master-Group-1.png");
+  background-image: url("../images/group-man.svg"), url("../images/group-tel.svg"), url("../images/group-load.svg");
   background-repeat: no-repeat;
   background-position: bottom 0 left 150px, bottom 0 right 0, bottom 0 left 0;
   background-size: 184px, 271px, 251px;
@@ -1306,21 +1306,21 @@ html {
 }
 
 .position__item:nth-child(1) .position__item-image {
-  background-image: url("../images/Web-Group-1.svg");
+  background-image: url("../images/web-group-1.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .position__item:nth-child(2) .position__item-image {
-  background-image: url("../images/Web-Group-2.svg");
+  background-image: url("../images/web-group-2.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .position__item:nth-child(3) .position__item-image {
-  background-image: url("../images/Web-Group-3.svg");
+  background-image: url("../images/web-group-3.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1400,7 +1400,7 @@ html {
   height: 456px;
   margin-left: 100px;
   margin-right: 140px;
-  background-image: url("../images/Form-Group.png");
+  background-image: url("../images/form-img.svg");
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1424,7 +1424,7 @@ html {
     margin-right: auto;
     height: 351px;
     margin-top: 71px;
-    background-image: url("../images/Form-img-mobile.png");
+    background-image: url("../images/form-img.svg");
     background-position: top 0 left 26px;
     background-size: 248px 351px;
     background-repeat: no-repeat;
